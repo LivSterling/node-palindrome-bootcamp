@@ -23,7 +23,7 @@ const server = http.createServer(function (req, res) {
                 }
                 res.end(JSON.stringify(objToJson));
             }
-            else if (formattedString === [...formattedString].reverse().join('')) {
+            else if (formattedString === [formattedString].reverse().join('')) {
                 const objToJson = {
                     msg: `${oGString} is a palindrome.`
                  }
